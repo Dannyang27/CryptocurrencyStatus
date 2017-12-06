@@ -1,5 +1,7 @@
 package com.example.dannyang27.bitcoinvalue.Util;
 
+import com.example.dannyang27.bitcoinvalue.R;
+
 /**
  * Created by Dannyang27 on 28/11/17.
  */
@@ -53,8 +55,59 @@ public class Util {
             res = "United State Dollar";
         }
 
-
         return res;
     }
+
+    public static int getImgByName(String abbr){
+        int drawable = R.drawable.empty;
+        if (abbr.equals("AUD")) {
+            drawable = R.drawable.aud;
+        } else if (abbr.equals("BRL")) {
+            drawable = R.drawable.brl;
+        } else if (abbr.equals("CAD")) {
+            drawable = R.drawable.cad;
+        } else if (abbr.equals("CHF")) {
+            drawable = R.drawable.chf;
+        } else if (abbr.equals("CLP")) {
+            drawable = R.drawable.clp;
+        } else if (abbr.equals("CNY")) {
+            drawable = R.drawable.cny;
+        } else if (abbr.equals("DKK")) {
+            drawable = R.drawable.dkk;
+        } else if (abbr.equals("EUR")) {
+            drawable = R.drawable.eur;
+        } else if (abbr.equals("GBP")) {
+            drawable = R.drawable.gbp;
+        } else if (abbr.equals("HKD")) {
+            drawable = R.drawable.hkd;
+        } else if (abbr.equals("INR")) {
+            drawable = R.drawable.inr;
+        } else if (abbr.equals("ISK")) {
+            drawable = R.drawable.isk;
+        } else if (abbr.equals("JPY")) {
+            drawable = R.drawable.jpy;
+        } else if (abbr.equals("KRW")) {
+            drawable = R.drawable.krw;
+        } else if (abbr.equals("NZD")) {
+            drawable = R.drawable.nzd;
+        } else if (abbr.equals("PLN")) {
+            drawable = R.drawable.pln;
+        } else if (abbr.equals("RUB")) {
+            drawable = R.drawable.rub;
+        } else if (abbr.equals("SEK")) {
+            drawable = R.drawable.sek;
+        } else if (abbr.equals("SGD")) {
+            drawable = R.drawable.sgd;
+        } else if (abbr.equals("THB")) {
+            drawable = R.drawable.thb;
+        } else if (abbr.equals("TWD")) {
+            drawable = R.drawable.twd;
+        } else if (abbr.equals("USD")) {
+            drawable = R.drawable.usd;
+        }
+
+        return drawable;
+    }
+
 
 }

@@ -17,7 +17,6 @@ public class BitcoinViewholder extends RecyclerView.ViewHolder {
     public TextView currency_abbr;
     public TextView currency_name;
     public TextView currency_value;
-    public TextView currency_increase;
     public View v;
     public BitcoinViewholder(View itemView) {
         super(itemView);
@@ -27,7 +26,6 @@ public class BitcoinViewholder extends RecyclerView.ViewHolder {
         currency_abbr = (TextView) itemView.findViewById(R.id.currency_abbr);
         currency_name = (TextView) itemView.findViewById(R.id.currency_name);
         currency_value = (TextView) itemView.findViewById(R.id.currency_value);
-        currency_increase = (TextView) itemView.findViewById(R.id.currency_increase);
 
 
     }
